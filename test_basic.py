@@ -48,7 +48,7 @@ class BasicTests(unittest.TestCase):
 
         int_result = int(result)
 
-        #print(int_result)
+        print(int_result)
 
         self.assertEqual(int_result, 6)
  
