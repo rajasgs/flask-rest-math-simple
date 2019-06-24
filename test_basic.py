@@ -4,6 +4,7 @@ from Main import app
 import json
  
 
+'''
 class BasicTests(unittest.TestCase):
  
     ############################
@@ -14,26 +15,28 @@ class BasicTests(unittest.TestCase):
     def setUp(self):
         #print('setup reached')
         self.app = app.test_client()
-        #print('self.app : ', self.app)
-        pass
+        print('self.app : ', self.app)
+        
         
  
     # executed after each test
     def tearDown(self):
-        #print('tear down reached')
-        pass
+        print('tear down reached')
+        
  
  
-###############
-#### tests ####
-###############
+    ###############
+    #### tests ####
+    ###############
  
     def test_main_page(self):
+        
         #print('test main page reached')
         response = self.app.get('/', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
 
     def test_math_2_4(self):
+        
         #print('test math 2 and 4')
         response = self.app.get('/math/add?a=2&b=4', follow_redirects=True)
         self.assertEqual(response.status_code, 200)
@@ -56,3 +59,4 @@ class BasicTests(unittest.TestCase):
 if __name__ == "__main__":
     unittest.main()
 
+'''
