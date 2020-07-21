@@ -6,7 +6,7 @@ import random
 @api.route('/')
 def index():
 
-    time.sleep(5)
+    time.sleep(20)
 
     r_number = random.randint(0, 1000)
 
