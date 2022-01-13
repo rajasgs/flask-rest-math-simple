@@ -3,6 +3,9 @@ from flask import current_app as app
 from flask import request
 from .response_utils import JSON_MIME_TYPE, success_, success_json
 
+
+
+
 '''
     /template/add?a=2&b=2
     http://127.0.0.1:5000/template/add?a=2&b=2
